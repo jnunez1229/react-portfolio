@@ -1,5 +1,5 @@
 import React , {useEffect} from 'react'
-import './Navbar.css';
+// import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 
@@ -47,7 +47,7 @@ const Navbar = () => {
   <nav className="navbar navbar-expand-lg navbar-mainbg p-0">
     
       <NavLink className="navbar-brand navbar-logo" to="/" exact>
-        Juan Nuñez
+      <i className="fas fa-code"></i> JN
       </NavLink>
     
     
@@ -73,7 +73,7 @@ const Navbar = () => {
               <NavLink className="nav-link" to="/" exact>
                 <i 
                 className="fas fa-home">
-                </i>Home
+                </i>HOME
               </NavLink>
             </li>
 
@@ -81,7 +81,7 @@ const Navbar = () => {
               <NavLink className="nav-link" to="/about" exact>
                 <i 
                 className="far fa-address-card">
-                </i>About
+                </i>ABOUT
               </NavLink> 
             </li>
 
@@ -89,21 +89,21 @@ const Navbar = () => {
               <NavLink className="nav-link" to="/portfolio" exact>
                 <i 
                 className="far fa-folder">
-                </i>Portfolio
+                </i>PORTFOLIO
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/contact" exact>
                 <i 
                 className="far fa-address-book">
-                </i>Contact
+                </i>CONTACT
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/resume" exact>
                 <i 
                 className="far fa-file">
-                </i>Resume
+                </i>RESUME
               </NavLink>
             </li>
         </ul>
