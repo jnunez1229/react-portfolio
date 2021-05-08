@@ -44,10 +44,10 @@ const Navbar = () => {
   }, []);
 
   return (
-  <nav className="navbar navbar-expand-lg navbar-mainbg">
+  <nav className="navbar navbar-expand-lg navbar-mainbg p-0">
     
       <NavLink className="navbar-brand navbar-logo" to="/" exact>
-        Web Solutions
+        Juan Nuñez
       </NavLink>
     
     
@@ -72,7 +72,7 @@ const Navbar = () => {
             <li className="nav-item active">
               <NavLink className="nav-link" to="/" exact>
                 <i 
-                className="fas fa-tachometer-alt">
+                className="fas fa-home">
                 </i>Home
               </NavLink>
             </li>
@@ -80,7 +80,7 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink className="nav-link" to="/about" exact>
                 <i 
-                className="far fa-address-book">
+                className="far fa-address-card">
                 </i>About
               </NavLink> 
             </li>
@@ -88,21 +88,21 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink className="nav-link" to="/portfolio" exact>
                 <i 
-                className="far fa-clone">
+                className="far fa-folder">
                 </i>Portfolio
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/contact" exact>
                 <i 
-                className="far fa-chart-bar">
+                className="far fa-address-book">
                 </i>Contact
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/resume" exact>
                 <i 
-                className="far fa-copy">
+                className="far fa-file">
                 </i>Resume
               </NavLink>
             </li>

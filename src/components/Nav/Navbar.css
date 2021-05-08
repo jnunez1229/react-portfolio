@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #fff; /* fallback for old browsers */
+  background-color: #fff; /* fallback for old browsers */
 }
 * {
   margin: 0;
@@ -10,6 +10,11 @@ body {
 }
 i {
   margin-right: 10px;
+}
+
+.navbar{
+  margin: 0;
+  padding: 0;
 }
 .navbar-logo {
   padding: 15px;
