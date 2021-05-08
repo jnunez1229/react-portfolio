@@ -1,61 +1,114 @@
-import React from "react";
-// import { capitalizeFirstLetter } from "../../utils/helpers";
+import React , {useEffect} from 'react'
+import './Navbar.css';
+import { NavLink } from 'react-router-dom';
+import $ from 'jquery';
 
-function Nav(props) {
-  const {
-    categories = [],
-    setCurrentCategory,
-    currentCategory,
-    contactSelected,
-    setContactSelected
-  } = props;
+const Navbar = () => {
 
+  function animation(){
+    var tabsNewAnim = $('#navbarSupportedContent');
+    var activeItemNewAnim = tabsNewAnim.find('.active');
+    var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+    var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+    var itemPosNewAnimTop = activeItemNewAnim.position();
+    var itemPosNewAnimLeft = activeItemNewAnim.position();
+    $(".hori-selector").css({
+      "top":itemPosNewAnimTop.top + "px", 
+      "left":itemPosNewAnimLeft.left + "px",
+      "height": activeWidthNewAnimHeight + "px",
+      "width": activeWidthNewAnimWidth + "px"
+    });
+    $("#navbarSupportedContent").on("click","li",function(e){
+      $('#navbarSupportedContent ul li').removeClass("active");
+      $(this).addClass('active');
+      var activeWidthNewAnimHeight = $(this).innerHeight();
+      var activeWidthNewAnimWidth = $(this).innerWidth();
+      var itemPosNewAnimTop = $(this).position();
+      var itemPosNewAnimLeft = $(this).position();
+      $(".hori-selector").css({
+        "top":itemPosNewAnimTop.top + "px", 
+        "left":itemPosNewAnimLeft.left + "px",
+        "height": activeWidthNewAnimHeight + "px",
+        "width": activeWidthNewAnimWidth + "px"
+      });
+    });
+  }
 
-  // const handleClick = (item) => {
-  //   console.log(item);
-  //   return item;
-  // };
+  useEffect(() => {
+    
+    animation();
+    $(window).on('resize', function(){
+      setTimeout(function(){ animation(); }, 500);
+    });
+    
+  }, []);
 
   return (
-    <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="camera">📸</span>Oh Snap!
-        </a>
-      </h2>
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About Me
-            </a>
-          </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>
-              Contact
-            </span>
-          </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && `navActive`
-                }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
-                }}
-              >
-                {/* {capitalizeFirstLetter(category.name)} */}
-              </span>
+  <nav className="navbar navbar-expand-lg navbar-mainbg">
+    
+      <NavLink className="navbar-brand navbar-logo" to="/" exact>
+        Web Solutions
+      </NavLink>
+    
+    
+      <button 
+        className="navbar-toggler"
+        onClick={ function(){
+          setTimeout(function(){ animation(); });
+        }}
+        type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i className="fas fa-bars text-white"></i>
+      </button>
+ 
+      <div 
+        className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav ml-auto">
+            
+            <div className="hori-selector">
+              <div className="left"></div>
+              <div className="right"></div>
+            </div>
+            
+            <li className="nav-item active">
+              <NavLink className="nav-link" to="/" exact>
+                <i 
+                className="fas fa-tachometer-alt">
+                </i>Home
+              </NavLink>
             </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
-  );
-}
 
-export default Nav;
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/about" exact>
+                <i 
+                className="far fa-address-book">
+                </i>About
+              </NavLink> 
+            </li>
+
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/portfolio" exact>
+                <i 
+                className="far fa-clone">
+                </i>Portfolio
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contact" exact>
+                <i 
+                className="far fa-chart-bar">
+                </i>Contact
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/resume" exact>
+                <i 
+                className="far fa-copy">
+                </i>Resume
+              </NavLink>
+            </li>
+        </ul>
+      </div>
+  </nav>
+  )
+}
+export default Navbar;

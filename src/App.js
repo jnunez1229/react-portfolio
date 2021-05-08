@@ -1,14 +1,18 @@
 import './App.css';
-import Nav from '../src/components/Nav'
+import Navbar from '../src/components/Nav'
 import About from '../src/components/About'
 import Contact from '../src/components/Contact'
+import { Router } from 'react-router';
 
 function App() {
   return (
-    <div className="App">
-    <Nav />
-    <Contact />
-    </div>
+    <Router>
+      <div className="App">
+      <Navbar />
+      <Contact />
+      </div>
+    </Router>
+
   );
 }
 
