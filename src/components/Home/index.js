@@ -11,7 +11,7 @@ const Home = (props) => {
         el: myRef.current,
           color: 0x3fff6c,
   color2: 0x979b97,
-  backgroundColor: 0x6b6e70
+  backgroundColor: 0x474b4f
       }))
     }
     return () => {
