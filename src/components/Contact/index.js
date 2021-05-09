@@ -38,7 +38,7 @@ function Contact(){
     return (
       <section>
         <div  className="container mt-3">
-          <h2 data-testid='h2contact' className="text-center">Contact</h2>
+          <h2 data-testid='h2contact'>Contact</h2>
           <form id='contact-form' onSubmit={handleSubmit}>
           <div>
             <div className="mb-3">
