@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import {Row, Col} from 'react-bootstrap';
 
 const Project = ({ project }) => {
 
     const [projects] = useState([
         {
             name: 'Eat Out Austin',
-            description: 'HTML/CSS/NodeJS/ExpressJS/Sequelize/Bootstrap/MySQL2',
+            description: 'HTML/CSS/NodeJS/Sequelize/Bootstrap/MySQL2',
             page: 'https://eat-out-austin.herokuapp.com/',
             github: 'https://github.com/DragoonKite/eat-out-austin'
             
@@ -50,21 +51,25 @@ const Project = ({ project }) => {
     const [currentProject, setCurrentProject] = useState();
     
     return (
-        <div>
-            {projects.map((project, i) => (
-            <div class={`grid-item work-${i}`}>
-                        
-                <div class="label">
-                    <h3>{project.name}</h3>
-                    <h4>{project.description}</h4>
-                    <div class="links">
-                        <a href={project.page}>Deployed Site</a> |
-                        <a href={project.github}>Github Repo</a>
-                    </div>
-                </div>
-            </div>
-        ))}
-        </div>
+            <Row>
+                {projects.map((project, i) => (
+                    <Col lg={6} className='mb-2'>
+                                    <div class={`grid-item work-${i + 1}`}>
+                            
+                            <div class="label">
+                                <h3>{project.name}</h3>
+                                <h4>{project.description}</h4>
+                                <div class="links">
+                                    <a href={project.page}>Deployed Site</a> |
+                                    <a href={project.github}>Github Repo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </Col>
+
+                 ))}
+            </Row>
+            
         
 
     )

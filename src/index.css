@@ -12,13 +12,10 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
-
 }
 
 body{
   font-family: var(--font-1);
-  /* background-color: var(--gray); */
 }
 
 .navbar{
@@ -43,6 +40,7 @@ body{
 
 }
 
+/* Home */
 #vanta-canvas{
   width: 100%;
   height: 100vh;
@@ -56,8 +54,6 @@ body{
   font-weight: 400;
   font-size: 4.5em;
   letter-spacing: 1.2px;
-  
-  /* text-shadow: 5px 5px var(--dark); */
   color: var(--light-green);
 }
 
@@ -68,6 +64,101 @@ body{
   color: white;
 
 }
+
+/* Home End */
+
+/* Portfolio Section */
+#work{
+  padding: 0 0 50px;
+}
+
+.work-head{
+  color: white;
+  font-weight: 400;
+  font-size: 3em;
+  margin: 0 auto 35px auto;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--light-green);
+  text-align: center;
+  width: 30%;
+  min-width: 228px;
+  letter-spacing: .1em;
+}
+
+.grid-container{
+  margin: 0 30px 50px;
+}
+
+.grid-item{
+  display: flex;
+  border: 1px solid var(--gray);
+  min-height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.label{
+  background: rgba(34,38,41,.75);
+  width:100%;
+  padding: 50px 15px 10px 5px;
+  text-align: center;
+  position: relative;
+  bottom: 1400px;
+  transition: .3s;
+}
+
+.grid-item:hover .label{
+  bottom: 0px;
+}
+
+.label h3{
+  font-size: 2em;
+  font-weight: 400;
+  color: white;
+}
+
+.label h4{
+  font-size: 1em;
+  color: var(--light-green);
+}
+
+.links{
+  color: white;
+}
+
+.work-1{
+  /* background-image: url(../images/eat-out-austin.png);
+  background-size: cover; */
+}
+
+.work-2{
+  /* background-image: url(../images/coding-quiz.png);
+  background-size: cover; */
+}
+
+.work-3{
+  /* background-image: url(../images/safe-travels.png);
+  background-size: cover; */
+}
+
+.work-4{
+  /* background-image: url(../images/weather-dashboard.png);
+  background-size: cover; */
+}
+
+.work-5{
+  /* background-image: url(../images/day-scheduler.png);
+  background-size: 120%;
+  background-position: cover; */
+}
+
+.work-6{
+  /* background-image: url(../images/day-scheduler.png);
+  background-size: 120%;
+  background-position: cover; */
+}
+
+/* Portfolio Section End */
 
 /* Footer Section */
 #contact-me{
@@ -109,3 +200,5 @@ footer h3{
   letter-spacing: .2em;
 }
 /* Footer Section End */
+
+
