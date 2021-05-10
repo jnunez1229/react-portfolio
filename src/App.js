@@ -35,7 +35,7 @@ function App() {
     }
   }, [vantaEffect])
   return (
-    <Router >
+    <Router basename={process.env.PUBLIC_URL}>
       <div ref={myRef} style={{
         height: '150vh'
       }}>
