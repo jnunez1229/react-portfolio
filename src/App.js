@@ -19,19 +19,6 @@ import {
 
 function App() {
 
-  const [contactSelected, setContactSelected] = useState(false);
-  const [categories] = useState([
-    {
-      name: 'about',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
-    },
-    { name: 'portfolio', description: 'Portraits of people in my life' },
-    { name: 'contact', description: 'Delicious delicacies' },
-    { name: 'resume', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
-  ]);
-
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-  
   const [vantaEffect, setVantaEffect] = useState(0)
   const myRef = useRef(null)
   useEffect(() => {
@@ -49,13 +36,11 @@ function App() {
   }, [vantaEffect])
   return (
     <Router >
-      <div ref={myRef}>
+      <div ref={myRef} style={{
+        height: '150vh'
+      }}>
       <Navbar
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
+
       ></Navbar>  
       <div className="App">
         <main>

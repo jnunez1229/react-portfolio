@@ -38,7 +38,7 @@ function Contact(){
     return (
       <section>
         <div  className="container mt-3">
-          <h2 id='title'>Contact</h2>
+          <h2 className='title'>Contact</h2>
           <form id='contact-form' onSubmit={handleSubmit}>
           <div>
             <div className="mb-3">
@@ -72,7 +72,7 @@ function Contact(){
               <textarea className="form-control" id="bio" rows="3" defaultValue={message} onBlur={handleChange}></textarea>
             </div>
             <div className="col-12">
-              <button className="btn btn-primary" type="submit">
+              <button id='submit' className="btn btn-primary" type="submit">
                 Submit
               </button>
             </div>

@@ -12,29 +12,34 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 
 body{
   font-family: var(--font-1);
+
 }
 
-h1, h2, h3, h4, h5, h6, label, p, img{
+h1, h2, h3, h5, h6, label, p, img, ul{
   color: white;
 }
 
+h4{
+  color: #222629;
+}
 
-
-#title{
+.title{
   font-weight: 300;
   font-style: normal;
+  border-bottom: white 1px;
 }
 
 /* navbar */
-#mainNavbar .nav-link, .links a{
+#mainNavbar .nav-link, .resume:hover, .links a{
   color: white;
 }
 
-#mainNavbar .nav-link:hover, .links a:hover, .fa-code, .selected{  
+#mainNavbar .nav-link:hover, .resume, .links a:hover, .fa-code, .selected{  
   color:var(--light-green);
 }
 
@@ -69,11 +74,16 @@ h1, h2, h3, h4, h5, h6, label, p, img{
 
 /* Home End */
 
+/* About */
+
+#profile-img{
+  src: url(../src/assets/images/Circle-Profile.png);
+}
+
 /* Portfolio Section */
 #work{
   padding: 0 0 50px;
 }
-
 .work-head{
   color: white;
   font-weight: 400;
@@ -129,38 +139,50 @@ h1, h2, h3, h4, h5, h6, label, p, img{
 }
 
 .work-1{
-  /* background-image: url(../images/eat-out-austin.png);
-  background-size: cover; */
+  background-image: url(../src/assets/images/eat-out-austin.png);
+  background-size: cover;
 }
 
 .work-2{
-  /* background-image: url(../images/coding-quiz.png);
-  background-size: cover; */
+  background-image: url(../src/assets/images/safe-travels.png);
+  background-size: cover;
 }
-
 .work-3{
-  /* background-image: url(../images/safe-travels.png);
-  background-size: cover; */
+  background-image: url(../src/assets/images/coding-quiz.png);
+  background-size: cover;
 }
 
 .work-4{
-  /* background-image: url(../images/weather-dashboard.png);
-  background-size: cover; */
+  background-image: url(../src/assets/images/day-scheduler.png);
+  background-size: 120%;
+  background-position: cover;
 }
 
 .work-5{
-  /* background-image: url(../images/day-scheduler.png);
-  background-size: 120%;
-  background-position: cover; */
+  background-image: url(../src/assets/images/weather-dashboard.png);
+  background-size: cover;
 }
 
 .work-6{
-  /* background-image: url(../images/day-scheduler.png);
-  background-size: 120%;
-  background-position: cover; */
+  background-image: url(../src/assets/images/coding-quiz.png);
+  background-size: cover;
 }
 
 /* Portfolio Section End */
+
+/* Contact */
+#submit{
+  background-color: var(--dark);  
+  border-color: white;
+
+}
+
+#submit:hover{
+  border-color: var(--light-green);
+  outline: white;
+}
+
+/* Contact End */
 
 /* Footer Section */
 #contact-me{

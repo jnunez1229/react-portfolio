@@ -9,7 +9,7 @@ const Portfolio = () => {
     return(
         <section id='work'>
         <div  className="container mt-3">
-          <h2 id='title' >Portfolio</h2>
+          <h2 className='title' >Portfolio</h2>
           <div className='grid-container'>
           <Project />
           </div>
