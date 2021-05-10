@@ -6,7 +6,7 @@
 
 *   Utilized React Framework, along with Bootstrap-React to style and organize pages
 
-*   Link to Deployed Site: (https://jnunez1229.github.io/juan-nunez/#)
+*   Link to Deployed Site: (https://juannunez.netlify.app/)
 
 ### Screenshot
 
