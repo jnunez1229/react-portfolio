@@ -1,14 +1,13 @@
 import React from 'react'
+import Work from '../Work'
 
 
-const Portfolio = () => {
+
+
+const Portfolio = (props) => {
+    const { projects } = props;
     return(
-        <section>
-        <div  className="container mt-3">
-          <h2 data-testid='h2contact'>Portfolio</h2>
-          
-        </div>
-      </section>
+        <Work />
     )
 }
 
