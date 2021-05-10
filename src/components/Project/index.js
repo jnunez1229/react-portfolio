@@ -53,15 +53,14 @@ const Project = ({ project }) => {
     return (
             <Row>
                 {projects.map((project, i) => (
-                    <Col lg={6} className='mb-2'>
+                    <Col lg={6} className='mb-2'  key={project.name}>
                                     <div class={`grid-item work-${i + 1}`}>
                             
                             <div class="label">
                                 <h3>{project.name}</h3>
                                 <h4>{project.description}</h4>
                                 <div class="links">
-                                    <a href={project.page}>Deployed Site</a> |
-                                    <a href={project.github}>Github Repo</a>
+                                    <a href={project.page}>Deployed Site</a> | <a href={project.github}>Github Repo</a>
                                 </div>
                             </div>
                         </div>

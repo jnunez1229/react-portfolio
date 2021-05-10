@@ -5,7 +5,7 @@ const Resume = () => {
     return(
         <section>
         <div  className="container mt-3">
-          <h2 data-testid='h2contact'>Resume</h2>
+          <h2 id='title'>Resume</h2>
           
         </div>
       </section>

@@ -14,11 +14,11 @@ const Navbar = (props) => {
   } = props;
 
   return (
-  <nav id='mainNavbar' className="navbar navbar-expand-lg navbar-mainbg p-0">
+  <nav id='mainNavbar' className="navbar navbar-expand-lg navbar-mainbg py-0">
     
-      <NavLink className="navbar-brand navbar-logo" to="/" exact>
+      <h2 className="navbar-brand navbar-logo my-0" to="/" exact>
       <i className="fas fa-code"></i> JN
-      </NavLink>
+      </h2>
     
     
       <button 
@@ -33,7 +33,7 @@ const Navbar = (props) => {
         <ul className="navbar-nav mr-auto">
             
             <li className="nav-item active">
-              <NavLink className="nav-link" to="/" exact>
+              <NavLink className="nav-link" to="/" exact activeStyle={{color:'#3fff6c'}}>
                 <i 
                 className="fas fa-home">
                 </i>
@@ -41,23 +41,23 @@ const Navbar = (props) => {
             </li>
 
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about" exact>
+              <NavLink className="nav-link" to="/about" exact activeStyle={{color:'#3fff6c'}}>
                 ABOUT
               </NavLink> 
             </li>
 
             <li className="nav-item">
-              <NavLink className="nav-link" to="/portfolio" exact>
+              <NavLink className="nav-link" to="/portfolio" exact activeStyle={{color:'#3fff6c'}}>
                 PORTFOLIO
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact" exact>
+              <NavLink className="nav-link" to="/contact" exact activeStyle={{color:'#3fff6c'}}>
                CONTACT
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/resume" exact>
+              <NavLink className="nav-link" to="/resume" exact activeStyle={{color:'#3fff6c'}}>
               RESUME
               </NavLink>
             </li>

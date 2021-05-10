@@ -5,7 +5,7 @@ const About = () => {
     return(
         <section>
         <div  className="container mt-3">
-          <h2 data-testid='h2contact' >About Me</h2>
+          <h2 id='title'>About Me</h2>
           <div className="bio row d-flex justify-content-between mb-5">
             <div className="col-lg-4 d-flex justify-content-center">
                 <img 

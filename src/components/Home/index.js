@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react'
  
 const Home = () => {
   return <section id="vanta-canvas" className="hero" >
-        <div className='container'>
+        <div className='container-fluid'>
             <h2>Juan Nuñez</h2>
             <h3>Web Developer</h3>
         </div>
