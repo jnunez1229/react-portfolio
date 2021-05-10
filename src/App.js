@@ -11,7 +11,7 @@ import GLOBE from 'vanta/dist/vanta.globe.min'
 
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Redirect,
   Switch
