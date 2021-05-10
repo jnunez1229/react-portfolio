@@ -25,6 +25,15 @@ function Contact(){
             }
         }
 
+        if(e.target.name === 'message'){
+              if (!e.target.value.length) {
+                setErrorMessage(`${e.target.name} is required.`);
+              } else {
+                setErrorMessage('');
+              }
+        }
+      
+
         if(!errorMessage){
             setFormState({...formState, [e.target.name]: e.target.value})
         }      
@@ -48,9 +57,11 @@ function Contact(){
               <input
                 type="text"
                 className="form-control"
+                name="name"
                 id="name"
                 placeholder="name"
                 defaultValue={name} onBlur={handleChange}
+                
               />
             </div>
             <div className="mb-3">
@@ -61,6 +72,7 @@ function Contact(){
                 type="email"
                 className="form-control"
                 id="email"
+                name="email"
                 placeholder="name@example.com"
                 defaultValue={email} onBlur={handleChange}
               />
@@ -69,10 +81,15 @@ function Contact(){
               <label htmlFor="bio" className="form-label">
                 Message
               </label>
-              <textarea className="form-control" id="bio" rows="3" defaultValue={message} onBlur={handleChange}></textarea>
+              <textarea className="form-control"  name="message" id="bio" rows="3" defaultValue={message} onBlur={handleChange}></textarea>
             </div>
+            {errorMessage && (
+                <div>
+                    <p className="error-text">{errorMessage}</p>
+                </div>
+            )}
             <div className="col-12">
-              <button id='submit' className="btn btn-primary" type="submit">
+              <button data-testid='button' id='submit' className="btn btn-primary" type="submit">
                 Submit
               </button>
             </div>
