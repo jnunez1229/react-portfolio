@@ -27,7 +27,8 @@ function App() {
         el: myRef.current,
           color: 0x3fff6c,
   color2: 0x979b97,
-  backgroundColor: 0x6b6e70
+  backgroundColor: 0x6b6e70,
+  backgroundAttachment: 'fixed'
       }))
     }
     return () => {
@@ -37,8 +38,12 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div ref={myRef} style={{
-        height: '150vh'
+        height: '100vh',
+        width: '100%',
+        position:'fixed'
       }}>
+      </div>
+      
       <Navbar
 
       ></Navbar>  
@@ -63,10 +68,9 @@ function App() {
             <Redirect to="/" />
           </Switch>
         </main>
+        <Footer />
     </div>
-    <Footer />
 
-      </div>
      
     </Router>
 

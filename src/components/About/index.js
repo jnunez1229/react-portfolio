@@ -18,8 +18,8 @@ const About = () => {
                         src={profile}
                         alt="Juan's profile picture"
                         style={{
-                          height: 200,
-                          minWidth: 200
+                          minWidth: 200,
+                          maxHeight: 400
                         }}
                 >
 

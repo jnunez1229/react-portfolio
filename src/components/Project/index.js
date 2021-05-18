@@ -60,7 +60,7 @@ const Project = ({ project }) => {
                                 <h3>{project.name}</h3>
                                 <h4>{project.description}</h4>
                                 <div class="links">
-                                    <a href={project.page}>Deployed Site</a> | <a href={project.github}>Github Repo</a>
+                                    <a href={project.page} target='_blank' >Deployed Site</a> | <a href={project.github} target='_blank'>Github Repo</a>
                                 </div>
                             </div>
                         </div>

@@ -32,6 +32,11 @@ h4{
   font-weight: 300;
   font-style: normal;
   border-bottom: white 1px;
+  position: relative;
+}
+
+main{
+  height: 82vh;
 }
 
 /* navbar */
@@ -50,7 +55,8 @@ h4{
 /* Home */
 #vanta-canvas{
   width: 100%;
-  height: 100vh;
+  height: 82vh;
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -171,6 +177,11 @@ h4{
 /* Portfolio Section End */
 
 /* Contact */
+
+#contact-form{
+  position: relative;
+}
+
 #submit{
   background-color: var(--dark);  
   border-color: white;
@@ -184,10 +195,15 @@ h4{
 
 /* Contact End */
 
+.resume{
+  position: relative;
+}
+
 /* Footer Section */
 #contact-me{
   color:white;
   padding: 5px 0 10px;
+  position: relative;
 }
 
 #contact-me div{

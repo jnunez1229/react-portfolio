@@ -15,7 +15,7 @@ const Resume = () => {
         <section className='mb-5'>
         <div  className="container mt-3 mb-5">
           <h2 className='title'> Resume</h2>
-          <a className='resume' href={resume} onClick={noReload}>Download Resume</a>
+          <a className='resume' href={resume} onClick={noReload} target='_blank' >Download Resume</a>
 
           <Row>
             <Col md={6}>
