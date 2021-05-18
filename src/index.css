@@ -35,9 +35,7 @@ h4{
   position: relative;
 }
 
-main{
-  height: 82vh;
-}
+
 
 /* navbar */
 #mainNavbar .nav-link, .resume:hover, .links a{
