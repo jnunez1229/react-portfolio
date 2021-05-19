@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.87853bd2.chunk.css",
-    "main.js": "/static/js/main.6dfd4dc3.chunk.js",
-    "main.js.map": "/static/js/main.6dfd4dc3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.51b49365.js",
-    "runtime-main.js.map": "/static/js/runtime-main.51b49365.js.map",
-    "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.39bea750.chunk.js": "/static/js/2.39bea750.chunk.js",
-    "static/js/2.39bea750.chunk.js.map": "/static/js/2.39bea750.chunk.js.map",
-    "static/js/3.629252b7.chunk.js": "/static/js/3.629252b7.chunk.js",
-    "static/js/3.629252b7.chunk.js.map": "/static/js/3.629252b7.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.87853bd2.chunk.css.map": "/static/css/main.87853bd2.chunk.css.map",
-    "static/js/2.39bea750.chunk.js.LICENSE.txt": "/static/js/2.39bea750.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/weather-dashboard.4c6544b1.png",
-    "static/media/JNunezResume.2fb2f68d.pdf": "/static/media/JNunezResume.2fb2f68d.pdf"
+    "main.css": "/react-portfolio/static/css/main.67afe8b5.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.909fa17f.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.909fa17f.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.e40a36f2.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.e40a36f2.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/react-portfolio/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.39bea750.chunk.js": "/react-portfolio/static/js/2.39bea750.chunk.js",
+    "static/js/2.39bea750.chunk.js.map": "/react-portfolio/static/js/2.39bea750.chunk.js.map",
+    "static/js/3.629252b7.chunk.js": "/react-portfolio/static/js/3.629252b7.chunk.js",
+    "static/js/3.629252b7.chunk.js.map": "/react-portfolio/static/js/3.629252b7.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/react-portfolio/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.67afe8b5.chunk.css.map": "/react-portfolio/static/css/main.67afe8b5.chunk.css.map",
+    "static/js/2.39bea750.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.39bea750.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/react-portfolio/static/media/weather-dashboard.4c6544b1.png",
+    "static/media/JNunezResume.2fb2f68d.pdf": "/react-portfolio/static/media/JNunezResume.2fb2f68d.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.51b49365.js",
+    "static/js/runtime-main.e40a36f2.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.39bea750.chunk.js",
-    "static/css/main.87853bd2.chunk.css",
-    "static/js/main.6dfd4dc3.chunk.js"
+    "static/css/main.67afe8b5.chunk.css",
+    "static/js/main.909fa17f.chunk.js"
   ]
 }
