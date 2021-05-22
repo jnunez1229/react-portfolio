@@ -143,32 +143,32 @@ h4{
 }
 
 .work-1{
-  background-image: url(../src/assets/images/eat-out-austin.png);
+  background-image: url(../src/assets/images/eat-out-austin.jpg);
   background-size: cover;
 }
 
 .work-2{
-  background-image: url(../src/assets/images/safe-travels.png);
+  background-image: url(../src/assets/images/safe-travels.jpg);
   background-size: cover;
 }
 .work-3{
-  background-image: url(../src/assets/images/coding-quiz.png);
+  background-image: url(../src/assets/images/tech-blog.jpg);
   background-size: cover;
 }
 
 .work-4{
-  background-image: url(../src/assets/images/day-scheduler.png);
+  background-image: url(../src/assets/images/day-scheduler.jpg);
   background-size: 120%;
   background-position: cover;
 }
 
 .work-5{
-  background-image: url(../src/assets/images/weather-dashboard.png);
+  background-image: url(../src/assets/images/weather-dashboard.jpg);
   background-size: cover;
 }
 
 .work-6{
-  background-image: url(../src/assets/images/coding-quiz.png);
+  background-image: url(../src/assets/images/coding-quiz.jpg);
   background-size: cover;
 }
 
