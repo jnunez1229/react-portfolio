@@ -81,7 +81,8 @@ h4{
 /* About */
 
 #profile-img{
-  src: url(../src/assets/images/Circle-Profile.png);
+  src: url(../src/assets/images/profile-close.jpg);
+  border-radius: 100%;
 }
 
 /* Portfolio Section */
@@ -114,17 +115,22 @@ h4{
 }
 
 .label{
-  background: rgba(34,38,41,.75);
   width:100%;
   padding: 50px 15px 10px 5px;
   text-align: center;
   position: relative;
-  bottom: 1400px;
-  transition: .3s;
+  visibility: hidden;
+  transition: .1s;
 }
 
 .grid-item:hover .label{
+  background: rgba(34,38,41,.75);
+
+
   bottom: 0px;
+  /* webkit-filter: blur(4px); Chrome, Safari, Opera */
+  backdrop-filter: blur(4px);
+  visibility: visible;
 }
 
 .label h3{
@@ -143,34 +149,40 @@ h4{
 }
 
 .work-1{
+  background-image: url(../src/assets/images/beerme.jpg);
+  background-size: cover;
+
+    
+}
+.work-1:hover{
+  /* filter: blur(4px); */
+}
+.work-2{
   background-image: url(../src/assets/images/eat-out-austin.jpg);
   background-size: cover;
 }
 
-.work-2{
+.work-3{
   background-image: url(../src/assets/images/safe-travels.jpg);
   background-size: cover;
 }
-.work-3{
+.work-4{
   background-image: url(../src/assets/images/tech-blog.jpg);
   background-size: cover;
 }
 
-.work-4{
+.work-5{
   background-image: url(../src/assets/images/day-scheduler.jpg);
   background-size: 120%;
   background-position: cover;
 }
 
-.work-5{
+.work-6{
   background-image: url(../src/assets/images/weather-dashboard.jpg);
   background-size: cover;
 }
 
-.work-6{
-  background-image: url(../src/assets/images/coding-quiz.jpg);
-  background-size: cover;
-}
+
 
 /* Portfolio Section End */
 

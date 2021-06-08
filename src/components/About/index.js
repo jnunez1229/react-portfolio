@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../../assets/images/Circle-Profile.png'
+import profile from '../../../src/assets/images/profile-close.jpg'
 import {Row, Col} from 'react-bootstrap'
 
 
@@ -18,8 +18,9 @@ const About = () => {
                         src={profile}
                         alt="Juan's profile picture"
                         style={{
-                          minWidth: 200,
-                          maxHeight: 400
+                          // minWidth: 200,
+                          // maxHeight: 400,
+                          textAlign: 'center'
                         }}
                 >
 

@@ -5,6 +5,13 @@ const Project = ({ project }) => {
 
     const [projects] = useState([
         {
+            name: 'Beer Me',
+            description: 'MERN Application',
+            page: 'https://hey-beer-me.herokuapp.com',
+            github: 'https://github.com/blueink38/beer-me'
+            
+        },
+        {
             name: 'Eat Out Austin',
             description: 'HTML/CSS/NodeJS/Sequelize/Bootstrap/MySQL2',
             page: 'https://eat-out-austin.herokuapp.com/',
@@ -38,14 +45,8 @@ const Project = ({ project }) => {
             page: 'https://jnunez1229.github.io/weather-dashboard/',
             github: 'https://github.com/jnunez1229/weather-dashboard'
             
-        },
-        {
-            name: 'Coding Quiz',
-            description: 'HTML/CSS/JS',
-            page: 'https://jnunez1229.github.io/coding-quiz/',
-            github: 'https://github.com/jnunez1229/coding-quiz'
-            
         }
+
     ]);
 
     const [currentProject, setCurrentProject] = useState();
