@@ -49,8 +49,8 @@ function Contact(){
         <div  className="container mt-3">
           <h2 className='title'>Contact</h2>
           <form id='contact-form' onSubmit={handleSubmit}>
-          <div>
-            <div className="mb-3">
+          <div className='justify-content-center'>
+            <div className=" w-50 mb-3">
               <label htmlFor="name" className="form-label" >
                 Name
               </label>
@@ -64,7 +64,7 @@ function Contact(){
                 
               />
             </div>
-            <div className="mb-3">
+            <div className="w-50 mb-3">
               <label htmlFor="email" className="form-label">
                 Email address
               </label>
@@ -77,7 +77,7 @@ function Contact(){
                 defaultValue={email} onBlur={handleChange}
               />
             </div>
-            <div className="mb-3">
+            <div className="w-50 mb-3">
               <label htmlFor="bio" className="form-label">
                 Message
               </label>

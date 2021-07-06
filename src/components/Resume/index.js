@@ -33,7 +33,7 @@ const Resume = () => {
                 <li>Bulma</li>
                 <li>React Native</li>
                 <li>Handlebars</li>
-                <li>Responisve Designs</li>
+                <li>Responsive Designs</li>
               </ul>
             </Col>
             <Col lg={6} style={{              
