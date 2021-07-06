@@ -15,11 +15,15 @@ const Resume = () => {
         <section className='mb-5'>
         <div  className="container mt-3 mb-5">
           <h2 className='title'> Resume</h2>
-          <a className='resume' href={resume} onClick={noReload} target='_blank' >Download Resume</a>
+          <a className='resume' href={resume} onClick={noReload} target='_blank' rel='noreferrer'>Download Resume</a>
 
           <Row>
-            <Col md={6}>
-              <h4 className='title'>Front-End Proficiencies</h4>
+            <Col md={6} style={{              
+              backgroundColor: 'rgba(0,0,0,.2)',
+              borderRadius: 5,
+              paddingLeft:'50px'
+            }}>
+              <h4 className='title'style={{color: 'white'}}>Front-End Proficiencies</h4>
               <ul>
                 <li>HTML5</li>
                 <li>CSS3</li>
@@ -32,8 +36,12 @@ const Resume = () => {
                 <li>Responisve Designs</li>
               </ul>
             </Col>
-            <Col lg={6}>
-            <h4 className='title'>Back-End Proficiencies</h4>
+            <Col lg={6} style={{              
+              backgroundColor: 'rgba(0,0,0,.2)',
+              borderRadius: 5,
+              paddingLeft:'50px'
+            }}>
+            <h4 className='title' style={{color: 'white'}}>Back-End Proficiencies</h4>
             <ul>
               <li>Custom API's</li>
               <li>NodeJS</li>

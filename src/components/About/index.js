@@ -16,7 +16,7 @@ const About = () => {
                         id='profile-img'
                         className="img-fluid" 
                         src={profile}
-                        alt="Juan's profile picture"
+                        alt="Juan's profile"
                         style={{
                           // minWidth: 200,
                           // maxHeight: 400,
@@ -35,7 +35,7 @@ const About = () => {
                   Hello!
                 </p>
                 <p >
-                I am a passionate Software Developer with a background in Music Education. While I am currently teaching in the DFW metroplex as a Band Director, I'm also in the process of obtaining a certification for full-stack development from the University of Texas at Austin Coding Boot Camp.
+                I am a passionate Software Developer with a background in Music Education!
                 </p>
                 <p>
                 As a teacher, I have found that the best way to reach a student was by having a well organized lesson plan that clearly explained a concept. Students were able to grasp concepts more easily if I found a way to allow students to connect concepts to their current experiences in life.
